@@ -35,5 +35,5 @@ optional arguments:
 $ ./split_data.sh <path_to_root_folder_container_data>
 ```
 
-will split ``coco_annotation.json`` into ``train.json`` and ``test.json`` with ratio 80%/20% respectively. It will skip all
-images (``--having-annotations``) without annotations.
+will split ``coco_annotation.json`` into ``train.json``, ``val.json`` and ``test.json`` with ratio 80%/12%/8% respectively. It will skip all
+images (``--having-annotations``) without annotations. It will also put the images into ``train``, ``val`` and ``test`` folders.
