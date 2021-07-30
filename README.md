@@ -8,7 +8,7 @@ Simple tool to split coco annotations (json) into train and test sets.
 pip install -r requirements
 ```
 
-## Usage
+## Usage for splitting annotation only
 
 ```
 $ python cocosplit.py -h
@@ -32,7 +32,7 @@ optional arguments:
 # Running
 
 ```
-$ python cocosplit.py --having-annotations -s 0.8 /path/to/your/coco_annotations.json train.json test.json
+$ ./split_data.sh <path_to_root_folder_container_data>
 ```
 
 will split ``coco_annotation.json`` into ``train.json`` and ``test.json`` with ratio 80%/20% respectively. It will skip all
